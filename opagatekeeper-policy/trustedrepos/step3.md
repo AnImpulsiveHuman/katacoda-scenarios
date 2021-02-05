@@ -6,7 +6,8 @@ First, we have to open the file and uncomment the rego policy lines that have be
 
 ## What the policy does
 - It checks if the kind is "Pod".
-- Finally checks if the "hostNetwork" is true and if so, denies the deployment.
+- Stores the image name in a variable.
+- Finally checks if the image name starts with any of the allowed repo names that were passed as a parameter  and if not, denies the deployment.
 
 Now we can apply the template.
 

@@ -1,0 +1,40 @@
+{
+  "title": "Require Trusted Image Repos",
+  "description": "A policy to restrict the use of trusted image repos only",
+  "difficulty": "Intermediate",
+  "time": "5 minutes",
+  "details": {
+    "steps": [
+      {
+        "title": "Reason",
+        "code": "wait.sh",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      },
+      {
+        "title": "Step 3",
+        "text": "step3.md"
+      },
+      { 
+        "title": "Step 4",
+        "text": "step4.md"
+      }
+
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "minikube-running"
+  }
+}

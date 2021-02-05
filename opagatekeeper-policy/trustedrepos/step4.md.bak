@@ -1,0 +1,12 @@
+We'll check if the policy is working as intended.
+
+## violation.yaml
+`kubectl apply -f https://raw.githubusercontent.com/vishalpranav03/opa-gatekeeper-policies/main/OPA%20Gatekeeper/Require%20trusted%20repos/deployment-violation.yaml`{{execute}}
+
+This should get denied.
+
+## non-violation.yaml
+`kubectl apply -f https://raw.githubusercontent.com/vishalpranav03/opa-gatekeeper-policies/main/OPA%20Gatekeeper/Require%20trusted%20repos/deployment-non-violation.yaml`{{execute}}
+
+This should not get denied.
+

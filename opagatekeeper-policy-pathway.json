@@ -1,0 +1,31 @@
+{
+  "title": "OPA Gatekeeper Policies",
+  "description": "Opa gatekeper policies",
+  "courses": [
+    {
+      "course_id": "test",
+      "title": "OPA Gatekeeper",
+      "description": "Enforce policies using OPA Gatekeeper"
+    },
+    { 
+      "course_id": "hostnetwork",
+      "title": "Example Use-case 1",
+      "description": "A policy to prevent the usage of hostNetwork"
+    },
+    { 
+      "course_id": "trustedrepos",
+      "title": "Example Use-case 2",
+      "description": "A policy to restrict the use images only from trusted repos"
+    },
+    { 
+      "course_id": "blocklatest",
+      "title": "Example Use-case 3",
+      "description": "A policy to prevent using images with the latest tag"
+    },
+    {
+      "course_id": "playground",
+      "title": "OPA Policy Playground",
+      "description": "Have fun playing with your own OPA policies"
+    }
+  ]
+}

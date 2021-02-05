@@ -1,0 +1,40 @@
+{
+  "title": "OPA Policy Playground",
+  "description": "Have fun playing with your own OPA policies",
+  "difficulty": "Intermediate",
+  "time": "10",
+  "details": {
+    "steps": [
+      {
+        "title": "Step 1",
+        "courseData": "dir.sh",
+        "code": "wait.sh",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+        "host01": [
+            {"file": "template.yaml", "target": "/root/playground/", "chmod": "+x"},
+            {"file": "constraint.yaml", "target": "/root/playground/", "chmod": "+x"},
+            {"file": "deployment.yaml", "target": "/root/playground/", "chmod": "+x"}
+        ]
+    }
+  },
+  "environment": {
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/playground/"
+  },
+  "backend": {
+    "imageid": "minikube-running"
+  }
+}

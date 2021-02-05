@@ -7,7 +7,7 @@
     "steps": [
       {
         "title": "Reason",
-        "code": "d",
+        "code": "wait.sh",
         "text": "step1.md"
       },
       {

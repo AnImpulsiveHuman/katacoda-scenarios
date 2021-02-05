@@ -1,21 +1,25 @@
-Before applying, open the template.yaml file and uncomment the rego policy lines that have been commented.
+We have to apply the ConstraintTemplate and the Constraint.
+
+## ConstraintTemplate
+The ConstraintTemplate has to be applied first.
+First, we have to open the file and uncomment the rego policy lines that have been commented out. We can do this by removing the "**#**" sign before the lines.
 
 `/root/opa/template.yaml`{{open}}
 
 ## What the policy does
 - It checks if the kind is "Pod".
-- It stores the image name in a variable.
-- Finally checks if the image name starts with any of the allowed names given in the parameter and if not, denies the deployment.
+- Finally checks if the "hostNetwork" is true and if so, denies the deployment.
 
-We will now apply the ConstraintTemplate.
+Now we can apply the template.
 
 `kubectl apply -f template.yaml`{{execute}}
 
-We will take a look at the Constraint file and then apply it.
+## Constraint
+Lets look at the constraint.
 
 `/root/opa/constraint.yaml`{{open}}
 
-We will apply the Constraint.
+We can apply the constraint.
 
 `kubectl apply -f constraint.yaml`{{execute}}
 

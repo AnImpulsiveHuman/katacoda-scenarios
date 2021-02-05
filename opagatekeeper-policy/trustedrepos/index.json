@@ -29,10 +29,19 @@
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+        "host01": [
+            {"file": "template.yaml", "target": "/root/opa/", "chmod": "+x"},
+            {"file": "constraint.yaml", "target": "/root/opa/", "chmod": "+x"},
+            {"file": "deployment-violation.yaml", "target": "/root/opa/", "chmod": "+x"},
+            {"file": "deployment-non-violation.yaml", "target": "/root/opa/", "chmod": "+x"}
+        ]
     }
   },
   "environment": {
-    "uilayout": "terminal"
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/opa"
   },
   "backend": {
     "imageid": "minikube-running"

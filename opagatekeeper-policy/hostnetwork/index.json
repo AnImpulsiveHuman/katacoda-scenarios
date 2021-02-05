@@ -7,8 +7,7 @@
     "steps": [
       {
         "title": "Reason",
-        "courseData": "cd.sh",
-        "code": "wait.sh",
+        "code": "d",
         "text": "step1.md"
       },
       {
@@ -41,7 +40,8 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "uieditorpath": "/root/opa"
   },
   "backend": {
     "imageid": "minikube-running"

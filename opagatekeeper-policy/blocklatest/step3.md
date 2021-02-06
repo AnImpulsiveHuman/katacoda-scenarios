@@ -24,4 +24,7 @@ Lets look at the constraint.yaml before applying.
 
 `kubectl apply -f constraint.yaml`{{execute}}
 
-**NOTE:** If "no matches for kind" error comes when applying the Constraint file, make sure all the rego policy lines have been uncommented. If the error still persists, try applying it again after a couple of minutes.
+**NOTE:** If "no matches for kind" error comes when applying the Constraint file, try the following fixes:
+- Make sure all the rego policy lines have been uncommented. 
+- Apply the template.yaml and the constraint.yaml again.
+- If the error still persists, try applying the constraint.yaml again after a couple of minutes.

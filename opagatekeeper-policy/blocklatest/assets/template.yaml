@@ -19,4 +19,4 @@ spec:
          #imagename := input.review.object.spec.containers[_].image   #Store the image name in a variable
          #endswith(imagename,"latest")                                #Check if it ends with the word "latest" since the image tag will be at the end of the image name
          #msg := "Images with tag the tag \"latest\" is prohibited"   #Deny message
-        }
+        }s

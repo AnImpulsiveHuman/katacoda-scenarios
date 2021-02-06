@@ -5,12 +5,12 @@ Take a look at the deployment-violation.yaml file before applying.
 
 `kubectl apply -f deployment-violation.yaml`{{execute}}
 
-This should get denied.
+This will get denied as the image is tagged as "latest".
 
 ## non-violation.yaml
 Take a look at the deployment-non-violation.yaml before applying.
 
 `kubectl apply -f deployment-non-violation.yaml`{{execute}}
 
-This should not get denied.
+This will not get denied as the image is not tagged as "latest".
 

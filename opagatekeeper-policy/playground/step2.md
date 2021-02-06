@@ -17,13 +17,11 @@ We can apply the constraint after making the changes. Make sure that the Constra
 
 `kubectl apply -f constraint.yaml`{{execute}}
 
-**NOTE:** If any "no matches for kind" error shows up when applying the **constraint.yaml** file, wait for a couple of minutes and try again.
-
-Finally change the **deployment.yaml** file and then apply to test if your policy is working as intended.
-
-`kubectl apply -f deployment.yaml`{{execute}}
-
 **NOTE:** If "no matches for kind" error comes when applying the Constraint file, try the following fixes:
 - Make sure all the rego policy lines have been uncommented. 
 - Apply the template.yaml and the constraint.yaml again.
 - If the error still persists, try applying the constraint.yaml again after a couple of minutes.
+
+Finally change the **deployment.yaml** file and then apply to test if your policy is working as intended.
+
+`kubectl apply -f deployment.yaml`{{execute}}

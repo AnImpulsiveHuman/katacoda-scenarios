@@ -24,7 +24,7 @@ spec:
         package k8sallowedrepos
 
         violation[{"msg": msg}] {
-         # input.review.object.spec.kind == "Pod"                                                   #Checks if the kind is "Pod"
+         # input.review.object.kind == "Pod"                                                        #Checks if the kind is "Pod"
          # image:= input.review.object.spec.containers[_].image                                     #Stores the image name in a variable
          # satisfied := [good | repo = input.parameters.repos[_] ; good = startswith(image, repo)]  #Checks if the image name starts with any of the allowed names and stores the result in a variable
          # not any(satisfied)                                                                       #Returns true if image does not start with any of the allowed names

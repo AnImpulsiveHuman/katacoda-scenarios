@@ -1,3 +1,4 @@
+#This does not have the parameter definition as this policy does not use any parameters
 apiVersion: templates.gatekeeper.sh/v1beta1
 kind: ConstraintTemplate
 metadata:
@@ -15,6 +16,7 @@ spec:
         package k8sblockhostnetwork
 
         violation[{"msg": msg, "details": {}}]{
-         #input.review.object.spec.hostNetwork 
-         #msg := sprintf("HostNetwork is prohibited",[])
+         #input.review.object.kind == "Pod"               #Checks if the kind is "Pod"
+         #input.review.object.spec.hostNetwork            #Checks if the hostNetwork is set to true
+         #msg := sprintf("HostNetwork is prohibited",[])  #Deny message
         }

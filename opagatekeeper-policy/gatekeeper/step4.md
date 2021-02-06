@@ -5,11 +5,15 @@ We have two files. One file - **violation.yaml**, which violates the enforced po
 We can conclude that the policy has been enforced correctly if the violation.yaml file gets denied and the non-violation.yaml file does not.
 
 ## violation.yaml
+Take a look at deployment-violation.yaml file and then apply.
+
 `kubectl apply -f deployment-violation.yaml`{{execute}}
 
 This will get denied.
 
 ## non-violation.yaml
+Take a look at the deployment-non-violation.yaml file and then apply.
+
 `kubectl apply -f deployment-non-violation.yaml`{{execute}}
 
 This will not get denied.

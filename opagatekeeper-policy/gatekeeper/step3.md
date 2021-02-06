@@ -1,5 +1,8 @@
 In this, we'll apply a policy to prohibit unauthorized host paths.
 
+## Reason
+This is important because, from a compromised pod, an attacker will be able to access sensitive files through the host path unless authorized host paths have been whitelisted.
+
 We have to apply the ConstraintTemplate and the Constraint.
 
 ## ConstraintTemplate

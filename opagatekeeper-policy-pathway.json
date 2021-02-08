@@ -9,17 +9,17 @@
     },
     { 
       "course_id": "hostnetwork",
-      "title": "Example Use-case 1",
+      "title": "Prohibit hostNetwork",
       "description": "A policy to prevent the usage of hostNetwork"
     },
     { 
       "course_id": "trustedrepos",
-      "title": "Example Use-case 2",
+      "title": "Require Trusted Image Repos",
       "description": "A policy to restrict the use images only from trusted repos"
     },
     { 
       "course_id": "blocklatest",
-      "title": "Example Use-case 3",
+      "title": "Block \"latest\" Image Tag",
       "description": "A policy to prevent using images with the latest tag"
     },
     {

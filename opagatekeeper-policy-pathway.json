@@ -24,7 +24,7 @@
     },
        { 
       "course_id": "configmap",
-      "title": "Block \"latest\" Image Tag",
+      "title": "Prohibit Unauthorized ConfigMap Volumes",
       "description": "A policy to prevent using unauthorized configmap volumes"
     },
     {

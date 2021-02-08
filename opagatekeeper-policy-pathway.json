@@ -26,7 +26,7 @@
       "course_id": "configmap",
       "title": "Block \"latest\" Image Tag",
       "description": "A policy to prevent using unauthorized configmap volumes"
-    }
+    },
     {
       "course_id": "playground",
       "title": "OPA Policy Playground",

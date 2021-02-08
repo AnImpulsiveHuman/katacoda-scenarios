@@ -1,11 +1,9 @@
 apiVersion: constraints.gatekeeper.sh/v1beta1
-kind: K8sDenyConfigMap
+kind: K8sBlockLatestTag
 metadata:
-  name: deny-config-map
+  name: block-latest-tag
 spec:
   match:
     kinds:
       - apiGroups: [""]
         kinds: ["Pod"]
-  parameters:
-    allowed: ["mysql", "es"]

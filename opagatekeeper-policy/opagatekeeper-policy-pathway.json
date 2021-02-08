@@ -1,0 +1,11 @@
+{
+  "title": "CI/CD and Pods Secure Configuration",
+  "description": "Policies to secure CI/CD and Pods",
+  "courses": [
+    {
+      "course_id": "configmap",
+      "title": "OPA Gatekeeper",
+      "description": "Enforce policies using OPA Gatekeeper"
+    }
+  ]
+}

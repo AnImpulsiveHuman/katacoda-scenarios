@@ -1,1 +1,0 @@
-Configmaps are used to store the configurations needed for a particluar serivce. Without any restrictions, an attacker can use a configmap that contains malicious configurations instead of the one that's meant to be used.

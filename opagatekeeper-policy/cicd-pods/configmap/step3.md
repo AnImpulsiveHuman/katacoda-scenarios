@@ -12,8 +12,8 @@ For example,
 
 ## What the policy does
 - It checks if the kind is "Pod".
-- It stores the allowed volume names from the parameter and the used volume name in variables.
-- Finally checks if the used volume name is allowed and if not, denies the deployment.
+- It stores the image name in a variable.
+- Finally checks if the name ends with "latest" and if so, denies the deployment.
 
 We will now apply the ConstraintTemplate.
 

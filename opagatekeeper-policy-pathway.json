@@ -22,11 +22,6 @@
       "title": "Block \"latest\" Image Tag",
       "description": "A policy to prevent using images with the latest tag"
     },
-       { 
-      "course_id": "configmap",
-      "title": "Prohibit Unauthorized ConfigMap Volumes",
-      "description": "A policy to prevent using unauthorized configmap volumes"
-    },
     {
       "course_id": "playground",
       "title": "OPA Policy Playground",

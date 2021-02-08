@@ -1,6 +1,6 @@
 {
-  "title": "Prohibit ConfigMap Volumes",
-  "description": "A policy to prevent pods from using unauthorized configmap volumes",
+  "title": "Block \"Latest\" Image Tag",
+  "description": "A policy to prevent using images with the \"latest\" tag",
   "difficulty": "Intermediate",
   "time": "5 minutes",
   "details": {

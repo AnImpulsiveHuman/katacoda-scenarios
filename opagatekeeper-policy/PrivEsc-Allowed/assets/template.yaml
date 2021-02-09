@@ -14,23 +14,22 @@ spec:
       rego: |
         package k8spspallowprivilegeescalationcontainer
         violation[{"msg": msg, "details": {}}] {
-            c := input_containers[_]
-            input_allow_privilege_escalation(c)
-            msg := sprintf("Privilege escalation for container has not been allowed: %v", [c.name])
-        }
-        input_allow_privilege_escalation(c) {
-            not has_field(c, "securityContext")
-        }
-        input_allow_privilege_escalation(c) {
-            not c.securityContext.allowPrivilegeEscalation == false
-        }
-        input_containers[c] {
-            c := input.review.object.spec.containers[_]
-        }
-        input_containers[c] {
-            c := input.review.object.spec.initContainers[_]
-        }
-        # has_field returns whether an object has a field
-        has_field(object, field) = true {
-            object[field]
-        }
+           #input.review.object.kind == "Pod"                                                            #Checks if it is Pod
+           #c := input_containers[_]
+           #input_allow_privilege_escalation(c)                                                          #Container is given as input to check for violation
+           #msg := sprintf("Privilege escalation for container has not been allowed: %v", [c.name]) }    #Deny message
+           
+        #input_allow_privilege_escalation(c) {
+            #not has_field(c, "securityContext")  }                     #Checks if even the security context field is there or not
+            
+        #input_allow_privilege_escalation(c) {
+            #not c.securityContext.allowPrivilegeEscalation == false }  #Looks if allowprivilegeescalation is false
+            
+        #input_containers[c] {
+            #c := input.review.object.spec.containers[_] }              #Input is the containers under use
+        
+        #input_containers[c] {
+            #c := input.review.object.spec.initContainers[_] }           #Checks for init Containers
+            
+        #has_field(object, field) = true {
+            #object[field] }                                             #has_field returns whether an object has a field

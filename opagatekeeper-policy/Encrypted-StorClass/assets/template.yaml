@@ -12,7 +12,7 @@ spec:
       rego: |
         package k8sencrypted 
         violation [{"msg": msg}] {
-          input.review.object.kind == "StorageClass"
-          input.review.object.parameters.encrypted == false
-          msg := "StorageClass is not encrypted."
+          #input.review.object.kind == "StorageClass"         #Ensures it is Storage Class
+          #input.review.object.parameters.encrypted == false  #Checks if the encrypted field is true or false
+          #msg := "StorageClass is not encrypted."            #Violation message
         }

@@ -38,7 +38,7 @@
       "description": "A policy to unsure that StorageClass is encrypted"
     },
     { 
-      "course_id": "PriveEsc-Allowed",
+      "course_id": "PrivEsc-Allowed",
       "title": "Allow privilege escalation",
       "description": "A policy to make sure privilege escalation is allowed"
     },

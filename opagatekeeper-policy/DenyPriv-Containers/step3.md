@@ -6,7 +6,7 @@ The ConstraintTemplate has to be applied first. First, we have to open the file 
 We can do this by removing the "#" before the start of each line.
 
 For example,
-```#input.review.object.kind == "Pod" ``` becomes ```input.review.object.kind == "Pod" ```
+`#input.review.object.kind == "Pod"` becomes `input.review.object.kind == "Pod"`
 
 What the policy does
 * It checks if the kind is "Pod".
@@ -15,12 +15,12 @@ What the policy does
 
 We will now apply the ConstraintTemplate.
 
-```kubectl apply -f template.yaml```{{execute}}
+`kubectl apply -f template.yaml`{{execute}}
 
 ### Constraint
 Lets look at the constraint.yaml before applying.
 
-```kubectl apply -f constraint.yaml```{{execute}}
+`kubectl apply -f constraint.yaml`{{execute}}
 
 NOTE: If "no matches for kind" error comes when applying the Constraint file, try the following fixes:
 

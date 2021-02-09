@@ -27,6 +27,26 @@
       "title": "Prohibit Unauthorized ConfigMap Volumes",
       "description": "A policy to prevent using unauthorized configmap volumes"
     },
+    { 
+      "course_id": "DenyPriv-Containers",
+      "title": "Deny Privilege Containers",
+      "description": "A policy to prevent the deny the privilege containers usage"
+    },
+    { 
+      "course_id": "Encrypted-Storclass",
+      "title": "Encrypted Storage Class",
+      "description": "A policy to unsure that StorageClass is encrypted"
+    },
+    { 
+      "course_id": "PriveEsc-Allowed",
+      "title": "Allow privilege escalation",
+      "description": "A policy to make sure privilege escalation is allowed"
+    },
+    { 
+      "course_id": "RetainPol-Deny",
+      "title": "Deny Retain Reclaim Policy",
+      "description": "A policy to deny Reclaim Policy of Retain Type"
+    },
     {
       "course_id": "playground",
       "title": "OPA Policy Playground",

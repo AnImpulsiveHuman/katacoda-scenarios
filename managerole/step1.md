@@ -1,0 +1,1 @@
+Often in many environments, pulling images without specifing any tags will by default result in the image with tag "latest" being pulled instead of the recently updated image. Hence blocking of images with the "latest" tag will prevent accidental usage of images tagged "latest" that actually may not be the latest.

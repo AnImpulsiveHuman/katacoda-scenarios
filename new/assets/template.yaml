@@ -1,0 +1,25 @@
+apiVersion: templates.gatekeeper.sh/v1beta1
+kind: ConstraintTemplate
+metadata:
+  name: k8sblockwildcardverb
+  annotations:
+    description: Blocks wildcard in verbs.
+spec:
+  crd:
+    spec:
+      names:
+        kind: K8sBlockWildCardVerb
+  targets:
+    - target: admission.k8s.gatekeeper.sh
+      rego: |
+        package k8sblockwildcardverb
+        violation[{"msg": msg, "details": {}}]{
+        #input.review.object.kind == "Role"            #Checks if the kind is "Role"
+        #input.review.object.rules[_].verbs[_] == "*"  #Checks if the verbs is a wildcard - "*"
+        #msg := "Wildcards are prohibited"             #Deny message
+        }
+        violation[{"msg": msg, "details": {}}]{
+        #input.review.object.kind == "ClusterRole"     #Checks if the kind is "ClusterRole"
+        #input.review.object.rules[_].verbs[_] == "*"  #Checks if the verbs is a wildcard - "*"
+        #msg := "Wildcards are prohibited"             #Deny message
+        }

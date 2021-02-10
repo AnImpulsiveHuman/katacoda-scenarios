@@ -1,0 +1,1 @@
+The use of wildcard in verbs result in giving a Role or a ClusterRole all the privileges rather than only the least privileges required. With this policy implemented, we can prevent the unaware or the accidental use of the wildcards in Role/ClusterRole and RoleBinding/ClusterRolebinding. 

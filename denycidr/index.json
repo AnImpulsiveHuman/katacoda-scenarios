@@ -1,6 +1,6 @@
 {
-  "title": "Enforce Namespace Restrictions",
-  "description": "A policy to enforce namespace restriction for NetworkPolicy",
+  "title": "Restrict Ingress/Egress IP CIDR Ranges in NetworkPolicies",
+  "description": "A policy to deny applying any kind of ingress/egress acesss to any IP or IP CIDR ranges except the ones which are allowed",
   "difficulty": "Intermediate",
   "time": "5 minutes",
   "details": {

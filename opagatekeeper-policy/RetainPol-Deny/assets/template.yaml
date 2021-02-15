@@ -14,7 +14,7 @@ spec:
       rego: |
         package k8sblockretain
         violation[{"msg": msg}] {
-         #input.review.object.kind == "StorageClass"      #Checks if it is Storage Class
-         #input.review.object.reclaimPolicy == "Retain"   #Checks if the Reclaim Policy is Retain
-         #msg := "Retain Policy should not be used"       #Violation Message
+         #input.review.object.kind == "PersistentVolume"                  #Checks if it is Persistent Volume
+         #input.review.object.spec.persistentVolumeReclaimPolicy == "Retain"   #Checks if the Reclaim Policy is Retain
+         #msg := "Retain Policy should not be used"                       #Violation Message
         }

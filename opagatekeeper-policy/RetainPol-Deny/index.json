@@ -1,5 +1,5 @@
 {
-  "title": "Deny \"Retain Reclaim\" Policy",
+  "title": "Deny \" Retain\" Reclaim\" Policy",
   "description": "A policy to produce violation message on finding Reclaim Policy as Retain",
   "difficulty": "Intermediate",
   "time": "5 minutes",

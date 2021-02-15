@@ -12,4 +12,4 @@ Take a look at the deployment-non-violation.yaml before applying.
 
 ```kubectl apply -f deployment-non-violation.yaml```{{execute}}
 
-This manifest executes successfully as the reclaimPolicy property is Delete or anything else than Retain.
+This manifest executes successfully as the PersistentVolumereclaimPolicy property is Delete or anything else than Retain.

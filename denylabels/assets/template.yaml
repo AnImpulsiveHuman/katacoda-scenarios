@@ -12,8 +12,8 @@ spec:
       rego: |
         package k8sdenyegress 
         violation [{"msg": msg}] {
-          input.review.object.spec.podSelector.matchLabels.app == "webserver"
-          input.review.object.spec.egress[_].to[_].podSelector.matchLabels.app != "mysql"
-          msg := "Cannot allow egress access."
+          input.review.object.spec.podSelector.matchLabels.app == "webserver"              #Checks if the app label is "webserver"
+          input.review.object.spec.egress[_].to[_].podSelector.matchLabels.app != "mysql"  #Checks if the app label is not "mysql"
+          msg := "Cannot allow egress access."                                             #Deny message
         }
 

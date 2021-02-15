@@ -7,12 +7,12 @@ We can do this by removing the "#" before the start of each line.
 
 For example,
 
-```#input.review.object.kind == "StorageClass"``` becomes ```input.review.object.kind == "StorageClass"```
+```#input.review.object.kind == "PersistentVolume"``` becomes ```input.review.object.kind == "PersistentVolume"```
 
 What the policy does
-* It checks if the kind is "StorageClass".
+* It checks if the kind is "PersistentVolume".
 * It stores the image name in a variable.
-* If the StorageClass is checked and we find reclaimPolicy: Retain then it leads to violation.
+* If the PersistentVolume is checked and we find persistentVolumereclaimPolicy: Retain then it leads to violation.
 * We will now apply the ConstraintTemplate.
 
 ```kubectl apply -f template.yaml```{{execute}}

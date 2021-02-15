@@ -1,5 +1,5 @@
 {
-  "title": "Restrict Ingress Ports in NetworkPolicies",
+  "title": "Restrict Ingress/Egress Ports in NetworkPolicies",
   "description": "A policy that denies allowing ingress/egress access to the web server pod on any other port except the allowed ports",
   "difficulty": "Intermediate",
   "time": "5 minutes",

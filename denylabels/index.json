@@ -1,6 +1,6 @@
 {
-  "title": "Enforce Namespace Restrictions",
-  "description": "A policy to enforce namespace restriction for NetworkPolicy",
+  "title": "Restrict Egress Label Selectors in NetworkPolicies",
+  "description": "A policy to deny allowing allow any kind of egress access to the web-server other than the pods which match the label ‘app: mysql’",
   "difficulty": "Intermediate",
   "time": "5 minutes",
   "details": {

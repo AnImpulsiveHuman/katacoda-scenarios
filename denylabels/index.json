@@ -44,6 +44,6 @@
     "uieditorpath": "/root/opa"
   },
   "backend": {
-    "imageid": "minikube-running"
+    "imageid": "kubeadm-running"
   }
 }

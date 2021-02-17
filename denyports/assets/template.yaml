@@ -21,10 +21,10 @@ spec:
         package k8sblockedports
 
         violation [{"msg": msg}] {
-          input.review.object.spec.podSelector.matchLabels.app == "webserver"
-          some i
-          allowed := input.parameters.ports
-          provided := input.review.object.spec.ingress[i].ports[i].port 
-          provided != allowed[i]
-          msg := "Applying Ingress rule for the provided port is not allowed"
+          # input.review.object.spec.podSelector.matchLabels.app == "webserver"
+          # some i
+          # allowed := input.parameters.ports
+          # provided := input.review.object.spec.ingress[i].ports[i].port 
+          # provided != allowed[i]
+          # msg := "Applying Ingress rule for the provided port is not allowed"
         }

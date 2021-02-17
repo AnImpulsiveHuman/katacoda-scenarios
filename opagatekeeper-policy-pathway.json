@@ -1,6 +1,6 @@
 {
   "title": "OPA Gatekeeper Policies",
-  "description": "Opa gatekeper policies",
+  "description": "Learn about OPA Gatekeeper Policies. Each scenario is based on a specific OPA Gatekeeper policy use-case, explaining the policy that is being implemented and the need for it in an organization",
   "courses": [
     {
       "course_id": "gatekeeper",

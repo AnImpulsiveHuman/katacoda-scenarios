@@ -47,6 +47,46 @@
       "title": "Deny Retain Reclaim Policy",
       "description": "A policy to deny Reclaim Policy of Retain Type"
     },
+    { 
+      "course_id": "namespace",
+      "title": "Enforce Namespace Restrictions",
+      "description": "A policy to enforce namespace restriction for NetworkPolicy"
+    },
+    { 
+      "course_id": "managerole",
+      "title": "Restrict Users who can Manage Roles and Cluster Roles",
+      "description": "A policy to allow only specific users to manager Roles and Cluster Roles."
+    },
+    { 
+      "course_id": "blockwildcard",
+      "title": "Block Wildcard in RBACs",
+      "description": "A policy to prevent the use of wildcard in RBACs"
+    },
+    { 
+      "course_id": "denycidr",
+      "title": "Restrict Ingress/Egress IP CIDR Ranges in NetworkPolicies",
+      "description": "A policy to deny applying any kind of ingress/egress acesss to any IP or IP CIDR ranges except the ones which are allowed"
+    },
+    { 
+      "course_id": "denylabels",
+      "title": "Restrict Egress Label Selectors in NetworkPolicies",
+      "description": "A policy to deny allowing allow any kind of egress access to the web-server other than the pods which match the label ‘app: mysql’"
+    },
+    { 
+      "course_id": "podselectors",
+      "title": "Restrict Namespace and Pod Selectors in NetworkPolicies",
+      "description": "A policy to prevent applying a network policy to a pod with a certain namespace"
+    },
+    { 
+      "course_id": "denyports",
+      "title": "Restrict Ingress/Egress Ports in NetworkPolicies",
+      "description": "A policy that denies allowing ingress/egress access to the web server pod on any other port except the allowed ports"
+    },
+    { 
+      "course_id": "denyegress",
+      "title": "Enforce Namespace Restrictions",
+      "description": "A policy to enforce namespace restriction for NetworkPolicy"
+    },
     {
       "course_id": "playground",
       "title": "OPA Policy Playground",

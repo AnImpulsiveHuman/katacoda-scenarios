@@ -19,10 +19,10 @@ spec:
       rego: |
         package k8sdenyegresscidr
         violation [{"msg": msg}] {
-            input.review.object.kind == "NetworkPolicy"
-            cidr_or_ip :=   input.review.object.spec.egress[_].to[_].ipBlock.cidr
-            cidr :=  input.parameters.cidr[_]
-            value := net.cidr_contains(cidr, cidr_or_ip)
-            not(value)
-            msg := "The specified IP is not allowed." }
+            #input.review.object.kind == "NetworkPolicy"
+            #cidr_or_ip :=   input.review.object.spec.egress[_].to[_].ipBlock.cidr
+            #cidr :=  input.parameters.cidr[_]
+            #value := net.cidr_contains(cidr, cidr_or_ip)
+            #not(value)
+            #msg := "The specified IP is not allowed." }
 

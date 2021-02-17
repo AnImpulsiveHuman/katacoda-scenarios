@@ -11,8 +11,12 @@ spec:
     - target: admission.k8s.gatekeeper.sh
       rego: |
         package k8sprivilegedcontainer
-        violation [{"msg": msg}] {
-          #input.review.object.kind == "Pod"                                        #Ensures it is Pod
-          #input.review.object.spec.containers.SecurityContext.privileged == true   #Checks for privileged field under Security Context 
-          #msg := "Privileged containers are not allowed."                          #Violation message if privilege container found
-        }
+        violation [{"msg": msg}] {                  
+             #input.review.object.kind == "Pod"                                        #Ensures it is Pod
+             #c := input_containers[_]
+             #c.securityContext.privileged                                             #Checks for privileged field under Security Context 
+             #msg := sprintf("Privileged container is not allowed: %v, securityContext: %v",[c.name, c.securityContext]) }      #Violation message if privilege container found
+             #input_containers[c] {  
+             #c := input.request.object.spec.containers[_]}
+             #input_containers[c] {
+             #c := input.request.object.spec.initContainers[_]}
